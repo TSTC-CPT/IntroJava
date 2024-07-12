@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en" class="unselectable">
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <title>Mastery Assessment</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <main>
+            <div id="title">M7: Text Adventure</div>
+            <p>
+                Write a program that simulates a small texted based adventure
+                game. There will be a world to explore and items to collect. The
+                player will move around the world collecting items. When all of
+                the items are collected the player wins the game. The player
+                will have limited energy and limited carrying capacity so the
+                game will offer a bit of a challenge. This program will use all
+                of the previously covered coding skills while incorporating some
+                arrays and Arraylists.
+            </p>
+            <p>Begin by creating the following classes:</p>
+            <ul>
+                <li>
+                    Player
+                    <ul>
+                        <li>Name</li>
+                        <li>Location</li>
+                        <li>Inventory</li>
+                    </ul>
+                </li>
+                <li>
+                    Location
+                    <ul>
+                        <li>Name</li>
+                        <li>Description</li>
+                        <li>Items</li>
+                        <li>Adjacent Locations</li>
+                        <li>display()</li>
+                    </ul>
+                </li>
+                <li>
+                    Item
+                    <ul>
+                        <li>Name</li>
+                        <li>Description</li>
+                    </ul>
+                </li>
+                <li>
+                    GameWorld
+                    <ul>
+                        <li>Player</li>
+                        <li>Locations</li>
+                        <li>Scanner</li>
+                        <li>mainLoop()</li>
+                    </ul>
+                </li>
+            </ul>
+            <h4>Player</h4>
+            <p>
+                Create the player class with a constructor. Set the starting
+                location to null. Initialize the inventory as an array of 3
+                Items, all set to null. If any element of the player’s inventory
+                is not holding an item it should be set to null throughout the
+                game.
+            </p>
+            <h4>Location</h4>
+            <p>
+                The location class will have a 2 argument constructor for
+                setting the name and description. Each location will be capable
+                of holding any number of items. It will also be capable of
+                holding any number of adjacent locations. The display method
+                will show the name and description of the location, along with a
+                numbered list of items and a numbered list of locations. The
+                player will be able to travel to any of the adjacent locations
+                from the current location.
+            </p>
+            <h4>Item</h4>
+            <p>
+                Items are simply something for the player to collect. They can
+                be pickup and dropped at any location by the player.
+            </p>
+            <h4>GameWorld</h4>
+            <p>
+                Most of the world will be setup in the constructor. The world
+                will have an array of 6 or 7 locations. Use the map you created
+                in the prep assignment. Each location will be instantiated in
+                the GameWorld constructor. Provide each location with a name and
+                an interesting description. Use adjectives. Create each location
+                with the 2 argument constructor. Use enums to help keep track of
+                which location is which. Connect the paths between locations by
+                adding them to each other’s arrayLists. For example, if
+                location[FOREST] is connected to location[BEARCAVE] you would
+                write something like:
+            </p>
+            <div class="code">
+                location[FOREST].adjacentLocations.add(location[BEARCAVE]);
+            </div>
+
+            <p>
+                Note this connection only goes one way, so you also have to add
+                location[FOREST] to location[BEARCAVE] (Unless your player is
+                traveling over a cliff).
+            </p>
+            <p>
+                After linking all of the locations create at least 9 unique
+                Items for your game. Add the items to the locations. One
+                location must start with 3 items and 1 location must start with
+                zero items. Distribute the others somewhat evenly.
+            </p>
+            <p>
+                Finally set the player’s starting location. Provide some
+                introductory text and the basic controls of your game, including
+                how to drop items. Call the mainLoop() method. This concludes
+                the constructor.
+            </p>
+            <p>
+                The mainLoop() method will display the current location and its
+                description. It will also display the player’s current energy.
+                Provide the player with a list of options to choose from. These
+                options will be in a numbered list and include the adjacent
+                locations and the items at that location. The numbers for the
+                second list will pick up where the number of the first dropped
+                off. These must update with each action as necessary. (See
+                example output)
+            </p>
+            <p>
+                Each time the player changes locations their energy will
+                decrease by 1. If the player runs out of energy the game is
+                over. If the player drops all of the items in any single
+                location, the player wins.
+            </p>
+            <h4>Example output</h4>
+            <pre>
+Welcome to Adventure World!
+Use the menu provided to move and collect Items.
+You may only carry 3 items at a time.
+You can enter 0 (zero) to drop your items at any location.
+You begin your adventure in a quiet village. Have fun.
+
+************************************
+
+Remaining Energy: 10
+Quiet Village
+Several small houses are lined up on the outskirts of the village.
+There are a few old shops around the town square.
+Some children are playing in the street and the savory aroma of freshly baked bread is on the air.
+A worn path leads out of the village towards a busy market. 
+
+Items here:
+1. Empty flask
+2. Rusty horseshoe
+
+Places to go 
+3. Busy Market
+
+
+1
+You picked up the Empty flask
+Remaining Energy: 10
+Quiet Village
+Several small houses are lined up on the outskirts of the village.
+There are a few old shops around the town square.
+Some children are playing in the street and the savory aroma of freshly baked bread is on the air.
+A worn path leads out of the village towards a busy market. 
+
+Items here:
+1. Rusty horseshoe
+
+Places to go 
+2. Busy Market
+
+
+1
+You picked up the Rusty horseshoe
+Remaining Energy: 10
+There are no items here.
+
+
+Places to go 
+1. Busy Market
+
+
+1
+Remaining Energy: 9
+Busy Market
+There are several booths with vendors set up on both side of the path.
+They call to all who pass by, offering their wares and services.
+In one direction, the path leads out of the market to an open meadow.
+In the other direction it winds into a quiet village.
+
+Items here:
+1. Milk crate
+2. Crusty sandwich
+
+Places to go 
+3. Open Meadow
+4. Quiet Village
+
+            
+            </pre>
+            <h4>Submission Rules</h4>
+            <p>
+                Classes must be created in separate files.<br />
+                All coding must be your own original work.<br />
+                You must submit a zipped Netbeans Ant project. <br />
+                Your name must be part of the project name and project
+                folder.<br />
+                No loose files or maven projects will be accepted.<br />
+            </p>
+            <br /><br />
+            <br /><br />
+        </main>
+    </body>
+</html>

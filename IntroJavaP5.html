@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en" class="unselectable">
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <title>M5 Practice</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <main>
+            <div id="title">M5: Practice - Effective HP calculator</div>
+
+            <p>
+                Create a program to calculate the effective hit points of a
+                Hero. Effective hit points represent the amount of damage a hero
+                must take before he dies, including reductions from armor. Use a
+                class named Hero with the following variables and methods:
+            </p>
+            <pre>
+Private:
+	Hero Name
+	Base HP
+	Strength
+	Armor
+
+	calcTotalHp()
+Public:
+	calcEffectiveHp()
+        display()
+    </pre
+            >
+            <p>
+                The class should have one public method, calcEffectiveHP()
+                (which calculates the effective hit points). The class should
+                also have one private method, calcTotalHp(), which is called by
+                calcEffectiveHP() to calculate and return the amount of total
+                hit points the hero has. The display() method will show the
+                labeled values of each member variable in a professional format.
+            </p>
+            <p>Use the following formulas:</p>
+            <pre>
+Total hit points = base hit points + (strength x 19)
+Effective hit points = total hit points x (1 + armor x .06)   </pre
+            >
+            <p>
+                Create an instance of the Hero class. Prompt the user for all of
+                the object's information. Assign each value to the proper
+                variable. Call the calcEffectiveHp() method and the display()
+                method against the object. Take all user input with nextLine().
+            </p>
+            <p>
+                Ask the user if they would like to enter another calculation.
+                End your prompt with "(y/n)". If the user selects
+                <strong>y</strong> reprompt for all of the data except the name.
+                Any other response will end the program. Use an infinte loop.
+            </p>
+            <p>
+                Validate the user's input using for loops. Iterate through each
+                character in the input string and call the Character.isDigit()
+                and Character.isLetter() methods to validate each entry. Wrap
+                each prompt in a do loop so that it executes at least once. If
+                the input is invalid, reprompt for that input only. Do not
+                reprompt for data that was already entered correctly.
+            </p>
+            <h4>Validation Ranges</h4>
+            <p>
+                Armor should be between 0 and 50.<br />
+                Base hit points should be between 300 and 1000.<br />
+                Strength should be between 10 and 500.<br />
+                Names should only be letters and spaces.
+            </p>
+            <br />
+            <h4>Submission Rules</h4>
+            <p>
+                Classes must be created in separate files.<br />
+                All coding must be your own original work.<br />
+                You must submit a zipped Netbeans Ant project. <br />
+                Your name must be part of the project name and project
+                folder.<br />
+                No loose files or maven projects will be accepted.<br />
+            </p>
+            <br /><br />
+            <br /><br />
+        </main>
+    </body>
+</html>

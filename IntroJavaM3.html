@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" class="unselectable">
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <title>Mastery 3 - Custom Signs</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <main>
+            <div id="title">M3: Custom Signs</div>
+
+            <p>
+                For this mastery assessment you will create a program for a
+                store that sells custom signs. The store will charge a flat rate
+                for signs that have 1 image. If the customer wishes to use more
+                than 1 image, you will charge an additional fee per extra image.
+                Your program will ask the user for the message they want printed
+                on their custom sign. If the message is longer than 10
+                characters, you will charge them an additional fee per letter
+                over 10. When the program begins ask the user what message they
+                want printed on their sign, the quantity signs they want to
+                order, and the number of images they want to use.
+            </p>
+            <p>
+                Give your store a unique name. Be sure to print a welcome
+                message along with information on how much you charge per sign,
+                how much you charge per extra letter over 10, and how much your
+                charge for extra images. The program will print out 3 messages.
+                The first will be a receipt for the costs of one sign with one
+                image, the charge for extra letters, the tax amount, and the
+                total due. The second message will a receipt for the costs of
+                multiple signs ordered with one image, the charge for extra
+                letters, the tax amount, and the total due. The third message
+                will be a receipt for the costs of multiple signs ordered with
+                more than one image, the charge for extra letters, the tax
+                charged, and the total amount due.
+            </p>
+            <p>
+                Create a class that includes private data members to hold the
+                subtotals, tax charged and the total amount due. Additionally
+                you may include any other data members you feel are necessary.
+                It should also contain final constant members for the tax rate,
+                the price for one sign with one image, the rate you charge per
+                extra letter, and the rate you charge per extra image. The class
+                should also contain three overloaded methods (methods that have
+                the same name but different parameters) for printing the
+                receipts.
+            </p>
+            <p>
+                The first overloaded method receives 1 parameter that represent
+                the message to be printed on the sign. This method will
+                calculate costs of the sign, the charge for extra letters, tax
+                amount, and total due. It will then print a receipt that
+                includes the name of your business, the message to be printed on
+                the sign, The number of extra letters they have, the price per
+                extra letter, the charge for the extra letters, the subtotal
+                cost of the sign, the tax charged and the total amount due.
+            </p>
+            <p>
+                The second overloaded method receives 2 parameters. They
+                represent the message to be printed on the sign and the quantity
+                of signs ordered. Calculate the costs of all the signs,
+                including the charge for extra letters, the tax to be charged,
+                and total amount due. It will then print a receipt that includes
+                the name of your business, the message to be printed on the
+                signs, the number of signs they ordered, the price per sign, the
+                subtotal of the signs, the number of extra letters they have,
+                the price per extra letter, the charge for extra letters, the
+                subtotal costs of the signs plus the charge for extra letters,
+                the tax amount, and the total amount due.
+            </p>
+            <p>
+                All currency must be formatted to 2 decimal places and include a
+                $ sign.
+            </p>
+            <code
+                >Example receipt: <br /><br />
+                Hollingshead Custom Signs<br />
+                Message: Crissy's Creative Crafts<br />
+                10 Signs @ $10.00 each: $100.00<br />
+                14 extra letters @ $0.10 each: $14.00<br />
+                2 extra images @ $3.00 each: $60.00<br /><br />
+                Subtotal: $174.00<br />
+                Tax: $14.36<br />
+                Total Due: $188.36</code
+            ><br /><br /><br />
+            <p>
+                All coding must be your own original work.<br />
+                All code must follow the Java naming convention.<br />
+                You must submit a zipped Netbeans Ant project.<br />
+                Your name must be part of the project name and project
+                folder.<br />
+                No loose files or maven projects will be accepted.<br />
+            </p>
+            <br /><br /><br />
+        </main>
+    </body>
+</html>

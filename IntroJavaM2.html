@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en" class="unselectable">
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <title>Mastery Assessment 2</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <main>
+            <div id="title">M2: Simple Sales</div>
+            <p>
+                This mastery assessment is designed to test your ability to
+                write a Java program that is capable of getting input from the
+                user, performing calculations, and displaying the results. It
+                will also test your ability to properly declare and use
+                variables in the program to store and use data. For this
+                assessment you will create 2 programs. The first one will ask
+                the user for data using a console window and will print the
+                results to a console window. The second program will ask the
+                user for the data using a JOptionPane and will also display the
+                results to a single JOptionPane window. Please make sure the
+                program displays 1 single JOptionPane window that introduces
+                your business with the prices of your items per case and per
+                individual. This same JOptionPane window should also ask them
+                how many items they want. Then the the program should do all of
+                the calculations, and display the entire receipt in 1 single
+                JOptionPane window. You can print multiple lines to a single
+                JOptionPane window. Do not use a separate JOptionPane windows
+                for each line of the receipt.
+            </p>
+            <p>
+                You have a small business that sells 1 type of product to local
+                customers. You box the items in cases. Customers may purchase
+                any number of items they wish, even if they are a partial case.
+                You charge one price for each full case ordered, and another
+                price for each individual item that is not part of a full case.
+                The customer will enter the total number of items they wish to
+                order. Your program will divide that number into cases and the
+                number of individual items that are left over. For example: If
+                your cases hold 20 items and the customer orders 48 items, they
+                will be charged for 2 full cases and 8 individual items. Use the
+                modulus operator to calculate the individuals.
+            </p>
+            <p>
+                You decide what your business is selling, how many items makes a
+                case, the price for the case, and the price for individual
+                items. Full cases should have a discounted price for each item
+                in the case. For example if you sell individual items for $2.00
+                each, and you sell them in cases of 10. Then the price per case
+                should less than 10 individual items. At $2.00 each, 10 items
+                would cost $20.00, so the price per case should be less than
+                $20.00.
+            </p>
+            <p>
+                Be sure to state the name of your business, what your selling,
+                the price for each individual item, how many make a case and the
+                price per case in a welcome message. Be sure to format the
+                prices in the welcome message to 2 decimal places and include a
+                $ sign. Use variables to print the prices, do not physically
+                type the numbers into the welcome message.
+            </p>
+            <p>
+                Your program will calculate the amount the customer owes for the
+                cases and individuals items plus tax. Tax should be a
+                calculation of a percentage of the amount owed. It is not a flat
+                tax rate.
+            </p>
+            <p>
+                Declare all the variables at the top of the function, then use
+                the variables in the rest of the code. Do not declare variables
+                in the middle of your code. Do not type physical numbers into
+                the output statements or calculations. Use the variables you
+                declared at the top of the function.
+            </p>
+            <p>
+                Format all output that represents currency to 2 decimal places
+                and include a $ sign.
+            </p>
+            <p>
+                Create a receipt to display to the customer with a full
+                explanation of the charges. For example, if my business sold
+                crocheted hats for $5.00 each, or $25.00 for a case of 6, the
+                receipt should look like this:
+            </p>
+            <p>
+                Hollingshead's Handmade Hats<br />
+
+                Total number of hats ordered: 15<br />
+
+                2 cases of 6 hats @ $25.00 each = $50.00<br />
+
+                3 individual hats @ $5.00 each = $15.00<br /><br />
+
+                Subtotal: $65.00<br />
+
+                Tax: $5.36<br />
+
+                Total amount due: $70.36<br /><br />
+
+                Thank you for shopping with us!<br /><br />
+            </p>
+            <p>
+                <strong>Addtional Details</strong><br />
+                The program must include a welcome message that introduces the
+                user to your business (unique business name) and informs them of
+                the prices (unique prices) of the items per case and
+                individually.<br />
+
+                You must use variables to print the prices, avoid hardcoding
+                numbers in the output.<br />
+            </p>
+            <p>
+                The JOptionPane program must print the welcome message and ask
+                the user how many they want to order all in 1 single JOptionPane
+                window.<br />
+            </p>
+            <p>
+                Output includes the name of the business, the total number of
+                items order, the number of cases that came to and the price per
+                case with the subtotal for the cases, the number of individual
+                items ordered and the price for each and the subtotal for the
+                individual items ordered, the subtotal of the cases and
+                individuals, the tax amount, the total amount due.<br />
+            </p>
+            <p>
+                All currency amounts must be formatted to look like currency,
+                including a $ and formatted to 2 decimal places. Refer to the
+                example given in the instructions.<br />
+
+                <br />
+            </p>
+            <p><strong>Requirements</strong></p>
+
+            <ul>
+                <li>
+                    You must create your unique business name, item you are
+                    selling and set your own unique prices for the individual
+                    items and cases. Do not use the business name, items, or
+                    prices in the example.
+                </li>
+                <li>
+                    The programs must ask for the total number of items the
+                    customer wants. Do not ask for cases and individual
+                    separately. You must use the modulus to calculate the
+                    individuals.
+                </li>
+                <li>
+                    The programs must take the total number of items ordered and
+                    calculate how many cases that makes and how many individual
+                    items are left over.
+                </li>
+                <li>All calculations must be correct.</li>
+                <li>
+                    The programs must print a receipt that gives all the details
+                    of the order including the name of the business, the prices
+                    charged per individual item and the subtotal of individual
+                    item ordered, the price charged per case, the subtotal of
+                    cases ordered, the subtotal for the order, the tax charged
+                    and the total amount due.
+                </li>
+                <li>
+                    The receipt must also include a personal message to the
+                    buyer at the bottom of the receipt.
+                </li>
+                <li>
+                    Include comments in your code explaining your thought
+                    processes.
+                </li>
+                <li>
+                    Student must submit 2 separate programs, one that uses a
+                    console window only and one that uses a JOptionPane only.
+                </li>
+                <li>
+                    Each program must be your own original work, with unique
+                    variable names and comments
+                </li>
+                <li>
+                    You must submit zipped a
+                    <strong>Netbeans Ant</strong> project(s).
+                </li>
+                <li>
+                    Your name must be part of the project name and project
+                    folder.
+                </li>
+                <li>No loose files or maven projects will be accepted.</li>
+                <li>All code must follow the Java naming convention</li>
+            </ul>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Adv Java INEW 2338</title>
+    </head>
+
+    <body>
+        <a
+            href="https://tstc-cpt.github.io/IntroJava/IntroJavaM1.html"
+            target="_blank"
+            >M1 Mastery - Ascii Art</a
+        ><br />
+    </body>
+
+    <script>
+        fetch(
+            "https://tstc.instructure.com/api/v1/courses/2344/students/submissions?student_ids[]=270&include[]=user&include[]=submission_comments&include[]=assignment&per_page=100&access_token=15531~On22xXx6ERHiv6f1ssIpi6ISdjmLLwzZzdhKH6FyCpXqIcjq7pQpi8aVAURDJNTt"
+        )
+            .then((data) => {
+                return data.json();
+            })
+            .then((post) => {
+                console.log("id: ");
+                console.log(post.id);
+            });
+    </script>
+</html>

@@ -93,15 +93,16 @@
             </p>
 
             <h4>calculateDamage()</h4>
-            <p>
+            <p>                
                 This method will receive a Weapon reference as a parameter. The
-                damage dealt by each blow will be calculated randomly based on
-                the weapon’s damage value. The range will be from ½ weapon
+                damage dealt by each blow will be calculated 
+                <a class= "info" href = " https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/random/RandomGenerator.html#nextInt(int,int)" target="_blank" >randomly<span>opens in new window</span></a> 
+                based on the weapon’s damage value. The range will be from ½ weapon
                 damage to full weapon damage. For example, if the weapons damage
                 is 100, the lowest value will be 50, and the highest will be
                 100. This method will also check for a critical hit. Roll a
-                random float from 0 to 1. If the random float is less than or
-                equal to the weapons crit chance, display a message informing
+                random float from 0 to 1. If the  <a class= "info" href = "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Math.html#random()" target="_blank"> random float <span>opens in new window</span> </a>
+                is less than or equal to the weapons crit chance, display a message informing
                 the player of the critical hit. Calculate the additional damage
                 to be added to the base damage and return the total damage.
             </p>

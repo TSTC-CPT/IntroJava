@@ -87,10 +87,12 @@
                 in the prep assignment. Each location will be instantiated in
                 the GameWorld constructor. Provide each location with a name and
                 an interesting description. Use adjectives. Create each location
-                with the 2 argument constructor. Use enums to help keep track of
+                with the 2 argument constructor. Use final variables to help keep track of
                 which location is which. Connect the paths between locations by
-                adding them to each other’s arrayLists. For example, if
-                location[FOREST] is connected to location[BEARCAVE] you would
+                adding them to each other’s arrayLists. For example:<br>
+                final int FOREST = 0, BEARCAVE = 1;<br>
+                
+                if location[FOREST] is connected to location[BEARCAVE] you would
                 write something like:
             </p>
             <div class="code">
